@@ -1,0 +1,182 @@
+ul, #myUL {
+	list-style-type: none;
+}
+
+#myUL {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #e2dbc8;
+}
+
+.sidenav {
+	height: 100%;
+	width: 25%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	background-color: #342C21;
+	overflow-x: hidden;
+	padding-top: 20px;
+	
+}
+.sidenav.left {
+	left: 0;
+	color: yellow;
+	text-align: center;
+}
+.sidenav.right {
+	right: 0;
+	text-align: left;
+	line-height: 0.4;
+}
+.sidenav > ul > span {
+	color: red;
+}
+.sidenav > ul > span.ready {
+	color: yellow;
+}
+.sidenav > ul > span.active {
+	color: green;
+}
+.sidenav > ul > span:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.content {
+	background:url('https://www.runescape.com/img/rsp777/scroll/backdrop_745.gif') repeat-y center top;
+	margin-right: 25%;
+	margin-left: 25%;
+	padding:50px 100px;
+	position:relative;
+	max-width: 500px;
+		
+}
+.content:before,
+.content:after {
+	background:url('https://www.runescape.com/img/rsp777/scroll/backdrop_765_top.gif') no-repeat center top;
+	content:'';
+	height:50px;
+	left:0;
+	position:absolute;
+	top:-11px;
+	width:100%;
+}
+
+.content:after {
+	background:url('https://www.runescape.com/img/rsp777/scroll/backdrop_765_bottom.gif') no-repeat center bottom;
+	bottom:-11px;
+	top: auto;
+}
+
+.chip {
+	display: inline-block;
+	padding: 0 25px;
+	white-space: nowrap;
+	height: 45px;
+	font-size: 16px;
+	line-height: 45px;
+	border-radius: 25px;
+	background-color: #FF0000; /* #f44336 */
+	border-style: solid;
+}
+
+.chip.ready {
+	background-color: #FFFF00; /* #ff9800 */
+}
+
+.chip.active {
+	background-color: #0DC10D; /* #4caf50 */
+}
+
+.chip img {
+	float: left;
+	margin: 0 10px 0 -25px;
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+}
+
+.label {
+	color: black;
+	padding: 8px;
+	font-family: Arial;
+	border-radius: 0px;
+}
+.completed {background-color: #0DC10D;} /* Green */ /* #4caf50 */
+.completable {background-color: #FFFF00;} /* Orange */ /* #ff9800 */
+.uncompletable {background-color: #FF0000;} /* Red */ /* #f44336 */
+
+.btn {
+	border: none;
+	color: black;
+	padding: 8px 8px;
+	font-size: 14px;
+	cursor: pointer;
+	border-radius: 8px;
+	background-color: #e7e7e7;
+}
+.btn:hover {
+	background: #0DC10D;
+}
+.success {
+	background-color: #0DC10D; /* Green */
+}
+.success:hover {background-color: #0DC10D;}
+
+.caret {
+
+cursor: pointer;
+-webkit-user-select: none; /* Safari 3.1+ */
+-moz-user-select: none; /* Firefox 2+ */
+-ms-user-select: none; /* IE 10+ */
+user-select: none;
+}
+
+.caret::before {
+	content: "\2610";
+	color: black;
+	display: inline-block;
+	margin-right: 6px;
+}
+
+.caret-down::before {
+	content: "\2611";
+}
+
+.collapsed {
+	display: none;
+}
+
+.nested {
+	border-left: 1px dotted black;
+}
+
+.hidden {
+	display: none;	
+}
+
+.img {
+	width: 96px;
+	height: 96px;
+}
+
+.quest {
+	white-space: nowrap;
+	
+}
+
+.five {
+	
+	content:url('https://www.runescape.com/img/rsp777/scroll/backdrop_745.gif');
+	
+}
+
+
+
+
+
